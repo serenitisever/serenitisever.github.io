@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>О компании</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon/s.ico"/>
+        
+  <link rel="stylesheet" href="/themes/AdminLTE/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/themes/AdminLTE/dist/css/mobile-defina.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
+
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/AdminLTE.min.css"/>
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/skins/_all-skins.min.css"/>	
+        
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/sticky-footer-navbar.css"/>
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/new-age.min.css"/>
+        
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var monthNames = [ "Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря" ]; 
+            var dayNames= ["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"]
+
+            var newDate = new Date();
+            newDate.setDate(newDate.getDate());
+            $('#Date').html(newDate.getDate() + ' ' + monthNames[newDate.getMonth()] + ' ' + newDate.getFullYear());
+
+            setInterval( function() {
+                var seconds = new Date().getSeconds();
+                $("#sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+            },1000);
+
+            setInterval( function() {
+                var minutes = new Date().getMinutes();
+                $("#min").html(( minutes < 10 ? "0" : "" ) + minutes);
+            },1000);
+
+            setInterval( function() {
+                var hours = new Date().getHours();
+                $("#hours").html(( hours < 10 ? "0" : "" ) + hours);
+            }, 1000);
+            
+        }); 
+    </script>   
+   
+  </head>
+  <body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span><i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">
+                    <img src="/themes/AdminLTE/dist/img/rus.png" class="logo" alt="logotyp"/> 
+                    <span class="hidden-md hidden-sm text-muted">serenitiSever</span>
+                    
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="ionicons ion-android-apps catara"></i> <span class="hidden-md hidden-sm">Приложения</span>
+                        </a>
+			<ul class="dropdown-menu">
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/dar"><img src="/themes/AdminLTE/dist/img/md.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/lovesweet"><img src="/themes/AdminLTE/dist/img/ls.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/norddevil"><img src="/themes/AdminLTE/dist/img/nd.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/aromalove"><img src="/themes/AdminLTE/dist/img/gp.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/anatomia"><img src="/themes/AdminLTE/dist/img/ar.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/serenitisever"><img src="/themes/AdminLTE/dist/img/ss.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/newage"><img src="/themes/AdminLTE/dist/img/fm.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/classic"><img src="/themes/AdminLTE/dist/img/kj.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/games"><img src="/themes/AdminLTE/dist/img/ga.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/bookfate"><img src="/themes/AdminLTE/dist/img/bf.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/servis"><img src="/themes/AdminLTE/dist/img/ds.png" class="icons"></a></li>
+                            <li class="col-md-4 col-sm-4 col-sx-4 sera"><a href="/jspage"><img src="/themes/AdminLTE/dist/img/js.png" class="icons"></a></li>
+			</ul>	
+
+                    </li>				
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="ionicons ion-android-menu catara"></i> <span class="hidden-md hidden-sm">Меню</span>
+                        </a>
+                        <ul class="dropdown-menu no-padding">
+                                <li><a href="/about.html"><i class="ionicons ion-easel"></i> о сайте</a></li>
+                                <li><a href="/new.html"><i class="ionicons ion-ios-paper"></i> новости</a></li>
+                                <li><a href="/article.html"><i class="fa fa-paper-plane"></i> cтатьи</a></li>
+                                <li><a href="/faq.html"><i class="ionicons ion-help-circled"></i> ЧаВо</a></li>
+                                <li><a href="/shop.html"><i class="ionicons ion-android-playstore"></i> интернет-магазин</a></li>
+                                <li><a href="/literature.html"><i class="ionicons ion-ios-book"></i> литература</a></li>
+                                <li><a href="/verses.html"><i class="ionicons ion-android-list"></i> стихи</a></li>
+                                <li><a href="/trigger.html"><i class="ionicons ion-ios-heart"></i> знакомства</a></li>
+                                <li><a href="/guest.html"><i class="ionicons ion-coffee"></i> гостевая книга</a></li>
+                        </ul>				
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="/signup">
+                            <i class="ionicons ion-android-create catara"></i> <span class="hidden-sm">Зарегистрироваться</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/login">
+                            <i class="ionicons ion-locked catara"></i> <span class="hidden-sm">Вход</span>
+                        </a>
+                    </li> 
+<!--
+                    <li>
+                        <a class="page-scroll" href="#">
+                            <i class="ionicons ion-email catara"></i> <span class="visible-xs">Сообщения</span>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#">
+                            <i class="ionicons ion-android-notifications-none catara"></i> <span class="visible-xs">Оповещения</span>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" href="#">
+                            <i class="ionicons ion-compose catara"></i> <span class="visible-xs">Мои публикации</span>
+                        </a>
+                    </li>                    
+                    <li>
+                        <a class="page-scroll" style="width:160px;" href="#">
+                            <img class="img-circle user-ava" src="/themes/AdminLTE/dist/img/167.png" alt=""> <?=$name;?>
+                        </a>
+                    </li>                    
+                    -->
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="ionicons ion-android-cart catara"></i>
+                            <span class="label label-danger pull-right">9</span>
+                            <span class="visible-xs">Корзина</span> .
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><p class="margin"><small>В вашей корзине</small></p></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header margin text-center">всего 9 товаров</li>
+                            <li class="margin"><a href="/cart" class="btn btn-danger btn-sm">посмотреть</a></li>
+                        </ul>						
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/search"><i class="ionicons ion-android-search catara"></i> <span class="visible-xs">Поиск</span></a>
+                    </li>					
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">	
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1>
+                                <script>
+                                    var h=(new Date()).getHours();
+                                    if (h > 3 && h <  12) document.writeln("Доброе утро<?=($name == '')? '' : ', '.$name;?>"); 
+                                    if (h > 11 && h <  19) document.writeln("Добрый день<?=($name == '')? '' : ', '.$name;?>"); 
+                                    if (h > 18 && h <  24) document. writeln("Добрый вечер<?=($name == '')? '' : ', '.$name;?>"); 
+                                    if (h > 23 || h <  4 ) document. writeln("Доброй ночи<?=($name == '')? '' : ', '.$name;?>"); 
+                                </script>
+                            </h1> 
+                                <p>Похоже, что вы здесь впервые. Если да, то нажмите кнопку</p>
+                                <a href="#download" class="btn btn-outline btn-xl page-scroll">Начать пользоваться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+		
+<section id="features" class="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-sx-12">
+                <div class="box box-widget widget-user">
+                    <div class="widget-user-image" style="top: -115px;">
+                        <img class="img-circle" src="/themes/AdminLTE/dist/img/167.png" alt="serenitisever">
+                    </div>
+                </div>	
+            </div>				
+            <div class="col-lg-12 text-center">
+                <div class="section-heading">
+                    <h2 class="text-primary">Портал Интересной Литературы</h2>
+                    <hr/><br/>
+   
+                    <p class="text-success">Зелёный свет вашему творчеству!</p>
+                    <p>Мы постарались объеденить здесь самое лучшее и интересное, что может быть связано с книгами и литературой</p>
+                    <p>Теперь вы можете узнать об этом всё, что стеснялись спросить.</p>
+                    <br/>
+                    <a href="/about" class="btn btn-warning">подробнее</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>  
+<section class="tarif magic alert alert-dismissable">
+    <div class="container text-center">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+            <i class="ionicons ion-android-close" data-toggle="tooltip" title="закрыть"></i>
+        </button>              
+        <div class="row">
+            <div class="col-lg-12 center stylemagic">
+                <h1>Чудесный мир, на:</h1>
+                <u>www.serenitiSever.com</u>
+                <h3 class="text-primary pil">Портал Интересной Литературы</h3>
+                
+<button class="btn btn-danger btn-xl sea" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="fa fa-play-circle"></i> смотреть</button>
+<div class="col-lg-12"><br></div>
+<div class="modal fade bs-example-modal-lg" id="ss-video" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" style="color: white;" data-dismiss="modal" aria-hidden="true"><i class="ionicons ion-close"></i></button>
+            <h4 class="modal-title" id="myModalLabel">serenitiSever - Портал Интересной Литературы</h4>
+        </div>
+        <div class="modal-body no-padding">
+            <iframe width="100%" style="height: 80vh;" src="https://www.youtube.com/embed/KZ51emtQocE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+  </div>
+</div>            
+            </div>
+        </div>                  
+    </div>
+</section>
+<section id="contact" class="bg-primary" style="margin-top: -20px;">
+    <div class="container text-center">
+        <h2><i class="ionicons ion-ios-book-outline"></i> Новинка</h2>
+    </div>
+</section>
+
+<section style="padding: 0;">	
+    <div class="row">
+        <div class="col-md-5 col-sm-5 text-center views-book" style="background: url(http://www.stihi.ru/pics/2014/06/02/811.jpg) no-repeat center center / cover;height: 100vh;">
+            <img class="img-circle" src="/themes/AdminLTE/dist/img/3.png" alt="Цветок-Скорпион"/>
+        </div>
+        <div class="col-md-7 col-sm-7 books">
+            <div class="feature-item">
+                <h3 class="text-primary">Цветок-Скорпион</h3>
+                <p>Все мы хотим верить в волшебство, в сказку, надеемся увидеть чудо. И действительно, если верить в чудо, 
+                    то волшебство рано или поздно свершится. Не теряйте веру, даже когда закрываются двери перед вашим носом. 
+                    Даже если от вас все отвернулись, это не значит, что у вас ничего не получится. Нас всегда пугает что-то новое, 
+                    поэтому легко понять реакцию окружающих людей. Именно мечта, вера в чудо, и стойкость ваших намерений, 
+                    могут привести к желаемому результату. Цветок-Скорпион - это наследственная колдунья Роза, которую похитил 
+                    могущественный маг Мельхиор, ещё ребёнком. Он обратился в Руха, и унёс её в места столь глухие, где ждала смерть, 
+                    но всё пошло не так...</p>
+
+                <div class="row" style="margin-top:50px;">
+                    <div class="col-md-5 col-sm-5">
+                        <a href="/ru/book/bloomscorpion" class="btn btn-primary btn-lg day" data-toggle="tooltip" title="подробности к книге">
+                            &#160; <i class="fa fa-angle-right"></i> читать &#160;
+                        </a>					
+                    </div>
+                    <div class="col-md-7 col-sm-7 text-right">
+                        <div class="btn-group like">
+                            <button type="button" class="btn btn-lg"><i class="fa fa-eye prima"></i> 263</button>
+                            <button type="button" class="btn btn-lg"><i class="fa fa-comments prima"></i> 41</button>
+                            <button type="button" class="btn btn-lg"><i class="ionicons ion-android-favorite prima"></i> 198</button>
+                        </div>				
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div> 
+</section>   
+
+<section class="cta">
+    <div class="cta-content">
+        <div class="container">	
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Новости</h2>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="col-lg-12">
+                        <a href="/ru/news/upload_serenitisever">
+                            <div class="nnm" style="background: url(/themes/AdminLTE/dist/img/IMG4117s.png) no-repeat center center"></div>
+                        </a>													
+                    </div>
+                    <div class="col-lg-12">
+                        <h3>Обновления на serenitiSever</h3>
+                        <span class="graycolor">
+                            <i class="ionicons ion-ios-calendar"></i> 
+                            <span style="font-size:12px;"> 28 мая 2016 г., 11:01 </span>
+                        </span>
+                        <p style="display: block;height: 70px;" class="justify">Теперь сайт адаптирован под все устройства, чтение книг, и работа приложений стали  работать в трое лучше. Заметно поменялся и сам дизайн.</p>
+                        <p></p>
+                        <a href="/ru/news/upload_serenitisever" class="btn btn-outline page-scroll">подробнее <i class="ionicons ion-android-arrow-forward"></i></a>												
+                    </div>								
+                    <div class="col-lg-12"><br></div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="col-lg-12">
+                        <a href="/ru/news/new_yeare_literature">
+                            <div class="nnm" style="background: url(/themes/AdminLTE/dist/img/dxm.png) no-repeat center center"></div>
+                        </a>													
+                    </div>
+                    <div class="col-lg-12">
+                        <h3>2015 год объявлен Годом литературы</h3>
+                        <span class="graycolor">
+                            <i class="ionicons ion-ios-calendar"></i> 
+                            <span style="font-size:12px;"> 18 нояб. 2014 г., 18:11 </span>
+                        </span>
+                        <p style="display: block;height: 70px;" class="justify">13 июня 2014 года Владимир Путин подписал указ о проведении Года литературы в России в 2015 году.</p>
+                        <p></p>
+                        <a href="/ru/news/new_yeare_literature" class="btn btn-outline page-scroll">подробнее <i class="ionicons ion-android-arrow-forward"></i></a>													
+                    </div>								
+                    <div class="col-lg-12"><br></div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="col-lg-12">
+                        <a href="/ru/news/rayvaigmihorror">
+                            <div class="nnm" style="background: url(/themes/AdminLTE/dist/img/0wucLmZfkoc.png) no-repeat center center"></div>
+                        </a>													
+                    </div>
+                    <div class="col-lg-12">
+                        <h3>Рей Ваигми на Хэллоуине</h3>
+                        <span class="graycolor">
+                            <i class="ionicons ion-ios-calendar"></i> 
+                            <span style="font-size:12px;"> 28 сент. 2014 г., 19:15 </span>
+                        </span>
+                        <p style="display: block;height: 70px;" class="justify">31 октября 2014 года в городе Краснодаре состоится праздник, посвященный... </p>
+                        <p></p>
+                        <a href="/ru/news/rayvaigmihorror" class="btn btn-outline page-scroll">подробнее <i class="ionicons ion-android-arrow-forward"></i></a>													
+                    </div>								
+                    <div class="col-lg-12"><br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</section>
+
+
+
+<section id="features" class="footerbook">
+    <div class="container">
+        <h1 class="text-primary">Самые востребованные и интересные</h1>
+        <hr/>
+        <p class="text-muted">Мы показываем здесь самые актуальные книги, чтобы облегчить Ваш выбор, однако вы можете сами, 
+        прямо сейчас сделать свой выбор <a href="../sticky-footer">подробнее</a></p>
+    </div>
+</section> 
+
+<section id="features" class="features" style="padding: 0;">
+    <div class="row">
+        <div class="col-md-5 col-sm-6 wellss">
+            <h1 class="text-primary">Что нового</h1>
+            <h3 class="text-muted">Основные события портала</h3>
+            <hr/>
+            <br/>
+			
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<div id="news">
+	<ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+	</ol>
+                <div class="carousel-inner">
+                  <div class="item">
+                    <img src="/themes/AdminLTE/dist/img/transback.png" alt="First slide">
+
+                    <div class="carousel-caption">
+По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                    </div>
+                  </div>
+                  <div class="item active">
+                    <img src="/themes/AdminLTE/dist/img/transback.png" alt="Second slide">
+
+                    <div class="carousel-caption">
+По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
+текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/themes/AdminLTE/dist/img/transback.png" alt="Third slide">
+
+                    <div class="carousel-caption">
+По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                    </div>
+                  </div>
+                </div>
+	<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		<span class="fa fa-angle-left"></span>
+	</a>
+	<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		<span class="fa fa-angle-right"></span>
+	</a>
+	</div>
+</div>			  
+<br/>
+				<div class="row">
+					<div class="col-md-6  col-sm-6">
+						<h3 style="margin-top: 0;"><a href="#" class="pull-left">Подробнее <i class="fa fa-arrow-circle-o-right"></i></a></h3>
+					</div>
+					<div class="col-md-6  col-sm-6">
+						<div class="btn-group pull-right like">
+							<button type="button" class="btn"><i class="fa fa-share-alt text-primary prima"></i></button>
+							<button type="button" class="btn"><i class="fa fa-heart text-primary prima"></i></button>
+							<button type="button" class="btn"><i class="fa fa-comment text-primary prima"></i></button>
+						</div>		
+					</div>
+				</div>
+		</div>      
+		<div class="col-md-7 col-sm-6 reader-woman"></div>
+    </div>
+</section> 
+<div class="brblock"></div>
+
+
+
+<section id="features" class="app">
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <p>Скачайте приложение "serenitisever" на свой мобильный. Книги и Trigger теперь могут находится рядом с вами!</p>
+        </div>
+		
+            <div class="col-md-4 col-sm-4 no-padding">
+                <a href="https://www.apple.com/ru/ibooks/" class="btn btn-default btn-lg btn-flat appdown" target="_blank">
+                    <img src="/themes/AdminLTE/dist/img/1474835590_Apple.svg" style="width: 48px;padding: 5px;"/> App Store
+                </a>
+            </div> 
+
+            <div class="col-md-4 col-sm-4 no-padding">
+                <a href="https://play.google.com/store/books?hl=ru" class="btn btn-default btn-lg btn-flat appdown" target="_blank">
+                    <img src="/themes/AdminLTE/dist/img/1474835461_5345_-_Google_Play.svg" style="width: 48px;"/> Google Play
+                </a>  
+            </div>
+
+            <div class="col-md-4 col-sm-4 no-padding">
+                <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="btn btn-default btn-lg btn-flat appdown" target="_blank">
+                    <img src="/themes/AdminLTE/dist/img/1474835665_Windows_Phone.svg" style="width: 48px;padding: 7px;"/> Windows Store
+                </a>                                                    
+            </div>
+            
+            <div class="col-lg-12"><br/></div>
+                
+    <p>
+        <a style="cursor: pointer;" data-toggle="collapse" data-target="#demo">
+            Подписаться на обновления
+        </a>                
+    </p> 
+<div id="demo" class="collapse">
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4 text-center">
+            <div class="input-group ">
+                <input type="text" class="form-control" placeholder="введите ваш e-mail"/>
+                <span class="input-group-btn">
+                    <button class="btn btn-outline btn-flat page-scroll" type="button"><span class="glyphicon glyphicon-heart"></span> подписаться</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>        
+        
+        
+        
+    </div>
+</section> 
+
+<section id="features" class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 justify">
+                Копирование, сдача в прокат, содержимого сайта, без согласия автора, 
+                запрещены и преследуются в соответствии с законом об авторских и смежных правах. Данный сайт не является
+                публичной офертой, и администрация сайта не несёт ответственность за содержимое текстов, и размещённой информации. 
+                Ознакомьтесь с нашим <a href="/documentation/arhive/Terms_of_use"> пользовательским соглашением</a>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 xs-center sm-left md-left lg-left">
+                <a href="https://defina.ru" target="_blank">
+                    <img src="https://defina.ru/img/logotyp.png" style="width:40px;">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-4 lg-center md-center sm-center xs-center">
+                <p style="margin: 0;">serenitisever © все права защищены 2013 - 2017 год</p>
+                <div class="displayx">
+                    <a href="https://extremetracking.com/free?login=vaigmi" style="opacity:0;" target="_blank">.</a>
+                    <!-- <script src="https://t1.extreme-dm.com/f.js" id="eXF-vaigmi-1" async defer></script> -->
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 socseti xs-center sm-right md-right lg-right">
+                <a href="https://www.facebook.com/RayVaigmi" target="_blank" class="noteicon_facebook"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://twitter.com/ray_vaigmi" target="_blank" class="noteicon_twitter"><i class="fa fa-twitter-square"></i></a>
+                <a href="https://www.youtube.com/channel/UCaqADESpYNXliitOPtE-avQ" target="_blank" class="noteicon_youtube"><i class="fa fa-youtube-square"></i></a>
+                <a href="https://plus.google.com/u/0/104158822056026410619/posts" target="_blank" class="noteicon_google"><i class="fa fa-google-plus-square"></i></a>
+                <a href="/new" target="_blank" class="noteicon_rss"><i class="fa fa-rss-square"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+<script src="/themes/AdminLTE/dist/js/new-age.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>        
+  </body>
+</html>

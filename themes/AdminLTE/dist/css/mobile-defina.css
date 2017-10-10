@@ -1,0 +1,55 @@
+@charset 'utf-8';
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19.09.2017, 14:14:09
+    Author     : CMS Defina
+*/
+
+@media screen and (max-width:767px) {
+    .xs-left {text-align: left;}
+    .xs-right {text-align: right;}
+    .xs-center {text-align: center;}
+    .xs-justify {text-align: justify;}  
+    p{font-size: 12px;}
+    .lead {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .sm-left {text-align: left;}
+    .sm-right {text-align: right;}
+    .sm-center {text-align: center;}
+    .sm-justify {text-align: justify;}
+    p{font-size: 14px;}
+    .lead {
+        font-size: 16px;
+        font-weight: 300;
+    }    
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .md-left {text-align: left;}
+    .md-right {text-align: right;}
+    .md-center {text-align: center;}
+    .md-justify {text-align: justify;} 
+    p{font-size: 16px;}
+    .lead {
+        font-size: 18px;
+        font-weight: 300;
+    }    
+}
+@media screen and (min-width: 1200px) {
+    .lg-left{text-align: left;}
+    .lg-right{text-align: right;}
+    .lg-center{text-align: center;}
+    .lg-justify{text-align: justify;} 
+    p{font-size: 16px;}
+    .lead {
+        font-size: 22px;
+        font-weight: 400;
+    }    
+}

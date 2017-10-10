@@ -104,7 +104,7 @@
                                 <li><a href="/guest"><i class="ionicons ion-coffee"></i> гостевая книга</a></li>
                         </ul>				
                     </li>
-                    <?php if($name == '') : ?>
+
                     <li>
                         <a class="page-scroll" href="/signup">
                             <i class="ionicons ion-android-create catara"></i> <span class="hidden-sm">Зарегистрироваться</span>
@@ -115,7 +115,7 @@
                             <i class="ionicons ion-locked catara"></i> <span class="hidden-sm">Вход</span>
                         </a>
                     </li> 
-                    <?php else: ?>
+<!--
                     <li>
                         <a class="page-scroll" href="#">
                             <i class="ionicons ion-email catara"></i> <span class="visible-xs">Сообщения</span>
@@ -136,7 +136,7 @@
                             <img class="img-circle user-ava" src="/themes/AdminLTE/dist/img/167.png" alt=""> <?=$name;?>
                         </a>
                     </li>                    
-                    <?php endif; ?>
+                    -->
                     <li>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="ionicons ion-android-cart catara"></i>
@@ -172,11 +172,11 @@
                                     if (h > 23 || h <  4 ) document. writeln("Доброй ночи<?=($name == '')? '' : ', '.$name;?>"); 
                                 </script>
                             </h1> 
-                            <?php if($name == '') : ?>
+
                                 <p>Похоже, что вы здесь впервые. Если да, то нажмите кнопку</p>
                                 <a href="#download" class="btn btn-outline btn-xl page-scroll">Начать пользоваться</a>
-                            <?php else: ?>
-                            <div class="timeshow">
+
+                           <!-- <div class="timeshow">
                                 <h2 class="rw-sentence">
                                     <div class="pull-left">
                                         <i class="ionicons ion-android-time"></i>
@@ -197,7 +197,7 @@
                                     </div>	
                                 </h2>
                             </div>
-                            <?php endif; ?>
+                           -->
                                
                                 
                         </div>

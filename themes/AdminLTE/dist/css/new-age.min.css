@@ -17,12 +17,12 @@ body{font-family:Muli,Helvetica,Arial,sans-serif;webkit-tap-highlight-color:#222
     margin-top: -9px;
 }
 .nnm {
-    border-radius: 50em;
-    width: 200px;
+    border-radius: 0;
+    width: 100%;
     height: 200px;
     background-size: cover !important;
     display: block;
-    margin: 13px auto;
+    margin: 0 0 15px 0;
 }
 .user-ava {
     width: 23%;

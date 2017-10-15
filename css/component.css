@@ -3,6 +3,10 @@
     position: relative;
     margin-left: 32px;
 }
+.dropdown-menu {
+    box-shadow: none;
+    border-color: transparent;
+}
 .sea {text-decoration:none;color:#fff;}
 .bk-list li {
 	position: relative;

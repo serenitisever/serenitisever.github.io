@@ -33,7 +33,8 @@
                -moz-transition: all 0.15s;
                     -ms-transition: all 0.15s;
                      -o-transition: all 0.15s;
-                            transition: all 0.15s;			
+                        transition: all 0.15s;	
+		outline: none;
         }
         input[type='checkbox']:focus {
             border-color: #fff;

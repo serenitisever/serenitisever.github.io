@@ -19,6 +19,7 @@
     border-bottom: 1px solid #ddd;
     border-radius: 0;
     box-shadow: none;
+    color: #04a9f4;
 }
 
 .bk-schriben:focus{border-bottom: 1px solid #03A9F4;box-shadow:none;}

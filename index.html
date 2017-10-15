@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -6,25 +6,24 @@
         <title>serenitiSever</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="description" content=""/>
-        <meta name="author" content=""/>
-
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon/s.ico"/>
+        <meta name="author" content="CMS Defina" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon/s.ico" />
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/mobile-defina.css">
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/swiper.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/AdminLTE.min.css" />
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/skins/_all-skins.min.css" />
         
-  <link rel="stylesheet" href="/themes/AdminLTE/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/themes/AdminLTE/dist/css/mobile-defina.css">
-  <link rel="stylesheet" href="/themes/AdminLTE/dist/css/swiper.min.css">	    
-	    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
-
-        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/AdminLTE.min.css"/>
-        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/skins/_all-skins.min.css"/>	
-        
-        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/sticky-footer-navbar.css"/>
-        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/new-age.min.css"/>
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/sticky-footer-navbar.css" />
+        <link rel="stylesheet" href="/themes/AdminLTE/dist/css/new-age.min.css" />
+        <script src="js/modernizr.custom.js"></script>
         
 
     <script type="text/javascript">
@@ -83,6 +82,7 @@
     }
   .swiper-slide:focus{cursor: -webkit-grabbing;}  
     </style> 
+        <script src="js/modernizr.custom.js"></script>
   </head>
   <body>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -192,7 +192,7 @@
     </header> 
 
 		
-<section id="features" class="features">
+<section id="features" class="feat">
     <div class="container">
         <div class="row">
             <div class="col-sx-12">
@@ -204,16 +204,13 @@
             </div>				
             <div class="col-lg-12 text-center">
                 <div class="section-heading">
-                    <h2 class="text-primary">Портал Интересной Литературы</h2>
-                    <hr/><br/>
-   
-                    <p class="text-success">Зелёный свет вашему творчеству!</p>
+                    <h2 class="text-info">Портал Интересной Литературы</h2>
+                    <hr/>
+                    <p class="text-success" style="padding: 50px 0;">Зелёный свет вашему творчеству!</p>
                     <p>Мы постарались объеденить здесь самое лучшее и интересное, что может быть связано с книгами и литературой</p>
                     <p>Теперь вы можете узнать об этом всё, что стеснялись спросить.</p>
-                    <br/>
-                    <a href="/about" class="btn btn-warning">подробнее</a>
+                    <a href="/about.html" class="btn btn-warning">&#160;<i class="ionicons ion-arrow-right-c"></i> подробнее&#160;</a>                   
                 </div>
-                
             </div>
         </div>
     </div>
@@ -259,7 +256,7 @@
         <div class="col-md-5 col-sm-5 text-center views-book" style="background: url(http://www.stihi.ru/pics/2014/06/02/811.jpg) no-repeat center center / cover;height: 100vh;">
             <img class="img-circle" src="/themes/AdminLTE/dist/img/3.png" alt="Цветок-Скорпион"/>
         </div>
-        <div class="col-md-7 col-sm-7 books">
+        <div class="col-md-7 col-sm-7 books-bl">
             <div class="feature-item">
                 <h3 class="text-primary">Цветок-Скорпион</h3>
                 <p>Все мы хотим верить в волшебство, в сказку, надеемся увидеть чудо. И действительно, если верить в чудо, 
@@ -294,7 +291,8 @@
         <div class="container">	
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Новости</h2>
+                    <h2 class="innet">Новости</h2>
+                    <div class="brblock"></div>
                 </div>
 		    
 		    
@@ -304,7 +302,7 @@
 		<div class="swiper-slide">
 			<div class="row no-margin">
 				<div class="col-md-12 no-padding">
-					<a href="/ru/news/upload_serenitisever">
+					<a href="/news/upload_serenitisever">
 						<div class="nnm" style="background: url(/themes/AdminLTE/dist/img/IMG4117s.png) no-repeat center center"></div>
 					</a>			
 				</div>
@@ -483,37 +481,135 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h3>ХИТЫ ПРОДАЖ</h3><hr/>
-                <div class="brblock"></div>
+                <h3 class="innet">ХИТЫ ПРОДАЖ</h3>
             </div>
             <div class="col-lg-12 text-center">
                 <div class="col-md-4 col-sm-4">
-                    <a href="/ru/book/stepenigoad">
-                        <img src="/themes/AdminLTE/dist/img/ministepenygoad.png" style="width: 100%;" alt="СТЕПЕНЬGOAD">
-                        <p>СТЕПЕНЬGOAD</p>
+                    <a href="/book/stepenigoad">
+                        <ul id="bk-list" class="bk-list clearfix">
+                            <li>
+                                <div class="bk-book book-2 bk-bookdefault">
+                                    <div class="bk-front">
+                                        <div class="bk-cover-back"></div>
+                                        <div class="bk-cover" style="background: url(../images/andromeda.jpg) no-repeat center center / cover;">
+                                            <h2 style="display:none;">
+                                                <span>Ray Vaigmi</span>
+                                                <span>Туманность Андромеды</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="bk-page">
+                                        <div class="bk-content bk-content-current">
+                                            <p>Red snapper Kafue pike fangtooth humums slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream. Billfish hog sucker trout-perch lenok orbicular velvetfish. Delta smelt striped bass, medusafish dragon goby starry flounder cuchia round whitefish northern anchovy spadefish merluccid hake cat shark Black pickerel. Pacific cod.</p>
+                                        </div>
+                                    </div>
+                                    <div class="bk-back">
+                                        <p>История об обозримом будущем, в котором будут происходить отголоски прошлого, открывающая то, что за гранью понимания. Экипаж из 20 человек попадёт на Туманность Андромеды и увидит то, что было не дано, если бы они только знали, что им предстоит увидеть</p>
+                                    </div>
+                                    <div class="bk-right"></div>
+                                    <div class="bk-left">
+                                        <h2>
+                                            <span>Ray Vaigmi</span>
+                                            <small>Туманность Андромеды</small>
+                                        </h2>
+                                    </div>
+                                    <div class="bk-top"></div>
+                                    <div class="bk-bottom"></div>
+                                </div>
+                                <div class="bk-info text-center text-info">
+                                    <b style="cursor:pointer;">Рей Ваигми <small class="text-muted">"СТЕПЕНЬGOAD"</small></b>
+                                </div>
+                            </li>
+                        </ul>     
                     </a>
                 <br/>
                 </div> 
 
                 <div class="col-md-4 col-sm-4">
-                    <a href="/ru/book/miriada">
-                        <img src="/themes/AdminLTE/dist/img/minimiriada.png" style="width: 100%;" alt="МИРИАДА">
-                        <p>МИРИАДА</p>
+                    <a href="/book/miriada">
+                        <ul id="bk-list" class="bk-list clearfix">
+                            <li>
+                                <div class="bk-book book-2 bk-bookdefault">
+                                    <div class="bk-front">
+                                        <div class="bk-cover-back"></div>
+                                        <div class="bk-cover" style="background: url(../images/miriada.jpg) no-repeat center center / cover;">
+                                            <h2 style="display:none;">
+                                                <span>Ray Vaigmi</span>
+                                                <span>МИРИАДА</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="bk-page">
+                                        <div class="bk-content bk-content-current">
+                                            <p>Red snapper Kafue pike fangtooth humums slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream. Billfish hog sucker trout-perch lenok orbicular velvetfish. Delta smelt striped bass, medusafish dragon goby starry flounder cuchia round whitefish northern anchovy spadefish merluccid hake cat shark Black pickerel. Pacific cod.</p>
+                                        </div>
+                                    </div>
+                                    <div class="bk-back">
+                                        <p>История об обозримом будущем, в котором будут происходить отголоски прошлого, открывающая то, что за гранью понимания. Экипаж из 20 человек попадёт на Туманность Андромеды и увидит то, что было не дано, если бы они только знали, что им предстоит увидеть</p>
+                                    </div>
+                                    <div class="bk-right"></div>
+                                    <div class="bk-left">
+                                        <h2>
+                                            <span>Ray Vaigmi</span>
+                                            <small>МИРИАДА</small>
+                                        </h2>
+                                    </div>
+                                    <div class="bk-top"></div>
+                                    <div class="bk-bottom"></div>
+                                </div>
+                                <div class="bk-info text-center  text-info">
+                                    <b style="cursor:pointer;">Рей Ваигми <small class="text-muted">"МИРИАДА"</small></b>
+                                </div>
+                            </li>
+                        </ul>
                     </a>
                 <br/>
                 </div> 
 
                 <div class="col-md-4 col-sm-4">
-                    <a href="/ru/book/mygirl">
-                        <img src="/themes/AdminLTE/dist/img/minideadh_girl.png" style="width: 100%;" alt="Моя Девушка">
-                        <p>Моя Девушка</p>
+                    <a href="/book/mygirl">
+                        <ul id="bk-list" class="bk-list clearfix">
+                            <li>
+                                <div class="bk-book book-2 bk-bookdefault">
+                                    <div class="bk-front">
+                                        <div class="bk-cover-back"></div>
+                                        <div class="bk-cover" style="background: url(../images/deadh_girl.png) no-repeat center center / cover;">
+                                            <h2 style="display:none;">
+                                                <span>Ray Vaigmi</span>
+                                                <span>Моя Девушка</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="bk-page">
+                                        <div class="bk-content bk-content-current">
+                                            <p>Red snapper Kafue pike fangtooth humums slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream. Billfish hog sucker trout-perch lenok orbicular velvetfish. Delta smelt striped bass, medusafish dragon goby starry flounder cuchia round whitefish northern anchovy spadefish merluccid hake cat shark Black pickerel. Pacific cod.</p>
+                                        </div>
+                                    </div>
+                                    <div class="bk-back">
+                                        <p>История об обозримом будущем, в котором будут происходить отголоски прошлого, открывающая то, что за гранью понимания. Экипаж из 20 человек попадёт на Туманность Андромеды и увидит то, что было не дано, если бы они только знали, что им предстоит увидеть</p>
+                                    </div>
+                                    <div class="bk-right"></div>
+                                    <div class="bk-left">
+                                        <h2>
+                                            <span>Ray Vaigmi</span>
+                                            <small>Моя Девушка</small>
+                                        </h2>
+                                    </div>
+                                    <div class="bk-top"></div>
+                                    <div class="bk-bottom"></div>
+                                </div>
+                                <div class="bk-info text-center text-info">
+                                    <b style="cursor:pointer;">Рей Ваигми <small class="text-muted">"Моя Девушка"</small></b>
+                                </div>
+                            </li>
+                        </ul>
                     </a>
                 <br/>
                 </div> 
             </div>	  
         </div>
-    <div class="brblock"></div><div class="brblock"></div>
     </div>
+    <div class="brblock"></div>
 </section>
 
 
@@ -740,6 +836,12 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
-</script>        
+</script>  
+      <script src="js/books1.js"></script>
+      <script>
+          $(function () {
+              Books.init();
+          });
+      </script>
   </body>
 </html>

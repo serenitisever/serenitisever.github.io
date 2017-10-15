@@ -495,13 +495,13 @@
 .innet {
     margin-bottom: 50px;
 }
-.innet::after{
-	position: absolute;
+.innet::after {
+    position: absolute;
     content: '';
-    border-bottom: 3px solid gold;
+    border-bottom: 4px solid gold;
     text-align: center;
     width: 100px;
-    top: 71px;
+    top: 80px;
     left: 46%;
 }
 #comment h4 {

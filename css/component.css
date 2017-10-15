@@ -513,6 +513,7 @@
     height: 1px;
     margin: 5px 0;
     border: none;
+    max-width: 100%;
 }
 .btn-xl {
     padding: 15px 45px;

@@ -540,6 +540,16 @@
     color: #ddd;
 	padding:50px 0;
 }
+#bbook a {
+    color: #03A9F4 !important;
+    text-decoration: none;
+    font-size: 16px;
+}
+#bbook a:hover {
+    color: #03A9F4 !important;
+    text-decoration: underline;
+    font-size: 16px;
+}
 .no-padding{
 	padding: 0 !important;
 }

@@ -3,7 +3,7 @@
     position: relative;
     margin-left: 32px;
 }
-
+.sea {text-decoration:none;color:#fff;}
 .bk-list li {
 	position: relative;
 	width: 300px;

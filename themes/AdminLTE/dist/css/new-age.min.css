@@ -34,27 +34,28 @@ body{font-family:Muli,Helvetica,Arial,sans-serif;webkit-tap-highlight-color:#222
     color: gray;
 }
 .cta-content p {
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;	
     font-size: 14px;
     margin-bottom: 20px;
 	color:#fff;
 }
-.cta-content h3{
+.cta-content h3 {
     margin: 0;
-	font-family: 'Roboto Condensed';
-	font-style: normal;
-	font-weight: 400;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     color: #009AF7;
     display: block;
     height: 50px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
   
 .like .btn{
 	background:transparent;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;	
 }
@@ -104,10 +105,19 @@ body{font-family:Muli,Helvetica,Arial,sans-serif;webkit-tap-highlight-color:#222
     background-color: #fdcc52;
     border-color: #000;
 }
+.text-success {
+    color: #1bce1f;
+}
 /* конец блоки дополнений */
 
 .features{background-color:#fff;}
-
+.feat {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+}
 .books, btn{border-padius:0;}
 
 
@@ -122,10 +132,10 @@ body{font-family:Muli,Helvetica,Arial,sans-serif;webkit-tap-highlight-color:#222
 
 .magic {
     background: url(/themes/AdminLTE/dist/img/Cvetok_d_3.jpg) no-repeat #000 center center fixed /cover !important;
-    height: 400px;
+    height: auto;
     border-radius: 0;
     box-shadow: inset 0 0 32px #000;
-    border: 1px solid #000;
+    border: 1px solid rgba(0, 0, 0, 0.6);
     color: #fff;
     text-shadow: 0px 0px 30px #000;
 }
@@ -159,7 +169,7 @@ body{font-family:Muli,Helvetica,Arial,sans-serif;webkit-tap-highlight-color:#222
     
 .tarif {
     width: 100%;
-    padding: 50px 0;
+    padding: 150px 0;
     background-color: #777;
 }
 .app{
@@ -391,7 +401,7 @@ img::-moz-selection{color:#fff;background:0 0}
     width: 150px;
     margin: auto;
     display: table;
-    font-family: 'Roboto Condensed' !important;
+    font-family: 'Roboto' !important;
     font-style: normal;
     font-weight: 300;
 }
@@ -464,7 +474,7 @@ img::-moz-selection{color:#fff;background:0 0}
     .xs-justify {text-align: justify;}  
 	section{padding:50px 0;}
 	section h2{font-size:19px}	
-	p{font-size:12px;line-height:1.5;margin-bottom:20px}
+
 	.like{margin: auto 5%;}
 	.books p{
 		font-family: 'Roboto Condensed';
@@ -500,14 +510,29 @@ img::-moz-selection{color:#fff;background:0 0}
 		font-size: 25px;
 		margin-bottom: 30px;	
 	}
-	.books{
-		background-color: rgba(255, 255, 255, 0.78);
-		padding: 30px;
-		text-align: justify;
-		border-left: 0px solid rgba(255, 215, 0, 0.48);
-		height: auto;
-		display: block;
-	}
+    .books-bl h3 {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 30px;
+    } 
+    
+    .books {
+        background-color: rgba(255, 255, 255, 0.78);
+        padding: 30px;
+        text-align: justify;
+        border-left: 0px solid rgba(255, 215, 0, 0.48);
+        height: auto;
+        display: block;
+    }
+    .books-bl {
+        background-color: rgba(255, 255, 255, 0.78);
+        padding: 100px;
+        text-align: justify;
+        height: 100vh;
+        display: block;
+    }
 	.wellss h1{
 		font-family: 'Roboto Condensed';
 		font-style: normal;
@@ -557,7 +582,7 @@ img::-moz-selection{color:#fff;background:0 0}
     .sm-justify {text-align: justify;}
 	section{padding:50px 0}
 	section h2{font-size:50px}	
-	p{font-size:18px;line-height:1.5;margin-bottom:20px}
+
 	.prima {
 		font-size: 16px;
 		float: none;
@@ -610,6 +635,13 @@ img::-moz-selection{color:#fff;background:0 0}
 		font-size: 45px;
 		margin-bottom: 30px;	
 	}
+    .books-bl h3 {
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
 	.books{
 		background-color: rgba(255, 255, 255, 0.78);
 		padding: 51px;
@@ -618,6 +650,13 @@ img::-moz-selection{color:#fff;background:0 0}
 		height: 100vh;
 		display: block;	
 	}
+    .books-bl {
+        background-color: rgba(255, 255, 255, 0.78);
+        padding: 100px;
+        text-align: justify;
+        height: 100vh;
+        display: block;
+    }
 	.like .btn {
 		background: transparent;
 		font-family: 'Roboto Condensed';
@@ -653,7 +692,7 @@ img::-moz-selection{color:#fff;background:0 0}
     .md-justify {text-align: justify;}   
 	section{padding:50px 0}
 	section h2{font-size:50px}	
-	p{font-size:18px;line-height:1.5;margin-bottom:20px}
+
 	.prima {
 		font-size: 25px;
 		float: left;
@@ -699,19 +738,30 @@ img::-moz-selection{color:#fff;background:0 0}
 		z-index: 99;
 	}
 	.books p{
-		font-family: 'Roboto Condensed';
+		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 400;	
 		font-size:18px;
 	}	
 	.books h3{
-		font-family: 'Roboto Condensed';
+		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 700;		
 		font-size: 45px;
 		margin-bottom: 30px;	
 	}
-	.reader-woman{background: url(/themes/AdminLTE/dist/img/k112.jpg) no-repeat;height:100vh;}
+    .books-bl h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        margin-bottom: 30px;
+    } 
+    
+    .reader-woman {
+        background: url(/themes/AdminLTE/dist/img/k112.jpg) no-repeat;
+        height: 100vh;
+    }
 	.books{
 		background-color: rgba(255, 255, 255, 0.78);
 		padding: 100px;
@@ -719,7 +769,14 @@ img::-moz-selection{color:#fff;background:0 0}
 		border-left: 6px solid rgba(255, 215, 0, 0.48);
 		height: 100vh;
 		display: block;	
-	}	
+	}
+    .books-bl {
+        background-color: rgba(255, 255, 255, 0.78);
+        padding: 100px;
+        text-align: justify;
+        height: 100vh;
+        display: block;
+    }    
 	.formapp{height: 60vh;padding: 90px 0;color:#fff;}
 	.formapp small{
 		padding: 10px 70px;
@@ -742,14 +799,21 @@ img::-moz-selection{color:#fff;background:0 0}
     .lg-justify{text-align: justify;} 
 	section{padding:50px 0}
 	section h2{font-size:50px}	
-	p{font-size:18px;line-height:1.5;margin-bottom:20px}
 	.books h3{
-		font-family: 'Roboto Condensed';
+		font-family: 'Roboto';
 		font-style: normal;
 		font-weight: 700;		
 		font-size: 45px;
 		margin-bottom: 30px;	
 	}
+
+    .books-bl h3 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
 	.prima {
 		font-size: 25px;
 		float: left;
@@ -810,13 +874,20 @@ img::-moz-selection{color:#fff;background:0 0}
 		margin-bottom: 20px;	
 	}	
 	.reader-woman{background: url(/themes/AdminLTE/dist/img/k112.jpg) no-repeat;height:100vh;}
-	.books{
-		background-color: rgba(255, 255, 255, 0.78);
-		padding: 100px;
-		text-align: justify;
-		height: 100vh;
-		display: block;	
-	}	
+    .books {
+        background-color: rgba(255, 255, 255, 0.78);
+        padding: 100px 0;
+        text-align: justify;
+        height: auto;
+        display: block;
+    }
+    .books-bl {
+        background-color: rgba(255, 255, 255, 0.78);
+        padding: 100px;
+        text-align: justify;
+        height: 100vh;
+        display: block;
+    }
     .lead {
         font-size: 22px;
         font-weight: 400;

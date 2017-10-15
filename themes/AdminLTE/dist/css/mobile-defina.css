@@ -1,4 +1,4 @@
-@charset 'utf-8';
+﻿@charset 'utf-8';
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -13,8 +13,13 @@ and open the template in the editor.
     .xs-left {text-align: left;}
     .xs-right {text-align: right;}
     .xs-center {text-align: center;}
-    .xs-justify {text-align: justify;}  
-    p{font-size: 12px;}
+    .xs-justify {text-align: justify;}
+    p {
+        font-size: 12px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+    }
     .lead {
         font-size: 14px;
         font-weight: 300;
@@ -25,7 +30,12 @@ and open the template in the editor.
     .sm-right {text-align: right;}
     .sm-center {text-align: center;}
     .sm-justify {text-align: justify;}
-    p{font-size: 14px;}
+    p {
+        font-size: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+    }
     .lead {
         font-size: 16px;
         font-weight: 300;
@@ -35,8 +45,13 @@ and open the template in the editor.
     .md-left {text-align: left;}
     .md-right {text-align: right;}
     .md-center {text-align: center;}
-    .md-justify {text-align: justify;} 
-    p{font-size: 16px;}
+    .md-justify {text-align: justify;}
+    p {
+        font-size: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+    }
     .lead {
         font-size: 18px;
         font-weight: 300;
@@ -46,8 +61,13 @@ and open the template in the editor.
     .lg-left{text-align: left;}
     .lg-right{text-align: right;}
     .lg-center{text-align: center;}
-    .lg-justify{text-align: justify;} 
-    p{font-size: 16px;}
+    .lg-justify{text-align: justify;}
+    p {
+        font-size: 16px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+    }
     .lead {
         font-size: 22px;
         font-weight: 400;

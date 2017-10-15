@@ -17,9 +17,12 @@
     background: transparent;
     border: 0;
     border-bottom: 1px solid #ddd;
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     color: #04a9f4;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
 }
 
 .bk-schriben:focus{border-bottom: 1px solid #03A9F4;box-shadow:none;}

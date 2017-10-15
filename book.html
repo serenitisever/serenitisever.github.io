@@ -222,11 +222,8 @@
 									</div>
 								</div>
 							</div>                
-							<a href="#mail" style="color: #fff !important;text-decoration: none;" class="topLink btn btn-primary btn-lg sea">
-								<span onclick="expandit('schraiben')">
-										<i class="fa fa-pencil"></i>
-										написать рецензию
-								</span>
+							<a data-toggle="collapse" data-target="#mail" style="color: #fff !important;text-decoration: none;" class="topLink btn btn-primary btn-lg sea">
+								<i class="fa fa-pencil"></i> написать рецензию
 							</a>				
 						</div>
 					</div>					
@@ -243,26 +240,27 @@
 					<h2>Рецензия к книге <small>"Туманность Андромеды"</small></h2>
 					<br/>
 				</div>	
-				<div class="col-lg-8 col-lg-offset-2" style="display:none;">
-					
-					<br/>
-					<form role="form">
-					  <div class="form-group">
-						<input type="email" class="form-control bk-schriben" id="exampleInputEmail1" placeholder="Ваше имя">
-					  </div>				  
-					  <div class="form-group">
-						<input type="email" class="form-control bk-schriben" id="exampleInputEmail1" placeholder="Ваш email">
-					  </div>
-					  <div class="form-group">
-						<textarea class="form-control bk-schriben no-resize" rows="4" placeholder="Ваша рецензия"></textarea>
-					  </div>
-					  <div class="checkbox">
-						<label>
-							<input type="checkbox"> я соглашаюсь с <a href="#">пользовательским соглашением</a>
-						</label>
-					  </div>
-					  <button type="submit" class="btn btn-lg btn-primary pull-right"><i class="fa fa-paper-plane-o"></i> Отправить</button>
-					</form>
+				<div id="mail" class="collapse">
+					<div class="col-lg-8 col-lg-offset-2">
+						<br/>
+						<form role="form">
+						  <div class="form-group">
+							<input type="email" class="form-control bk-schriben" id="exampleInputEmail1" placeholder="Ваше имя">
+						  </div>				  
+						  <div class="form-group">
+							<input type="email" class="form-control bk-schriben" id="exampleInputEmail1" placeholder="Ваш email">
+						  </div>
+						  <div class="form-group">
+							<textarea class="form-control bk-schriben no-resize" rows="4" placeholder="Ваша рецензия"></textarea>
+						  </div>
+						  <div class="checkbox">
+							<label>
+								<input type="checkbox"> я соглашаюсь с <a href="#">пользовательским соглашением</a>
+							</label>
+						  </div>
+						  <button type="submit" class="btn btn-lg btn-primary pull-right"><i class="fa fa-paper-plane-o"></i> Отправить</button>
+						</form>
+					</div>				
 				</div>
 			</div>
 		</div>		

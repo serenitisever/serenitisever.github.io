@@ -30,6 +30,17 @@ body{font-family:Muli,Helvetica,Arial,sans-serif;webkit-tap-highlight-color:#222
     margin-right: 9px;
     margin-top: -6px;
 }
+.media-heading a {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    color: #03A9F4;
+}
+
+i a:hover {
+    color: #fcbd20;
+    text-decoration: underline;
+}
 .graycolor {
     color: gray;
 }

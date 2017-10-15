@@ -5,7 +5,7 @@
 }
 .dropdown-menu {
     box-shadow: none;
-    border-color: transparent;
+    border-color: transparent !important;
 }
 .sea {text-decoration:none;color:#fff;}
 .bk-list li {

@@ -24,17 +24,7 @@
         
         <link rel="stylesheet" href="/themes/AdminLTE/dist/css/sticky-footer-navbar.css"/>
         <link rel="stylesheet" href="/themes/AdminLTE/dist/css/new-age.min.css"/>
-		<script src="js/modernizr.custom.js"></script>
-<script>		
-$(document).ready(function(){
-	$("#menu").on("click","a", function (event) {
-		event.preventDefault();
-		var id  = $(this).attr('href'),
-		top = $(id).offset().top;
-		$('body,html').animate({scrollTop: top}, 1000);
-	});
-});
-</script>
+	<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body id="menu">
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -750,16 +740,26 @@ $(document).ready(function(){
 
         
 <script src="/themes/AdminLTE/dist/js/new-age.min.js"></script>
-		<script src="js/books1.js"></script>
-		<script>
-			$(function() {
-				Books.init();
-			});
-		</script>
-		<script>
-		$(document).ready(function(){
-			$('[data-toggle="tooltip"]').tooltip(); 
-		});
-		</script>
+<script src="js/books1.js"></script>
+<script>
+	$(function() {
+		Books.init();
+	});
+</script>
+<script>
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+<script>		
+$(document).ready(function(){
+	$("#menu").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+});
+</script>			
 	</body>
 </html>
